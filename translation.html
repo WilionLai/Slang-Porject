@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俚語大考驗</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/darkly_bootstrap.min.css"> -->
+    <style>
+        .p1 {
+            font-size: 50px;
+            text-align: center;
+            font-family: DFKai-sb;
+        }
+        
+        .bio {
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        .btn {
+            font-size: 30px;
+        }
+        
+        .modal-body {
+            font-size: 35px;
+        }
+        
+        .back {
+            opacity: 0.5;
+            transition: 0.3s;
+            position: fixed;
+            top: 0px;
+        }
+        
+        .back:hover {
+            opacity: 1;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // alert("提醒：記得開啟聲音！");
+            $(".tit").css("display", "block");
+
+            function autoPlay() {
+                time = setInterval(function() {
+                    $(".tit").css("display", "none");
+                }, 2000);
+            }
+            autoPlay();
+            $("#btn1").click(function() {
+                // $("p").hide();
+                alert('gg');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <a href="/index.html"><img src="/img/test.png" width="100px" height="100px" class="back"></a>
+    <!-- <div class="tit">HIHI</div> -->
+    <br>
+    <div class="container">
+        <p class="p1">俚語寶典</p>
+        <table class="table table-hover">
+            <thead>
+                <tr class="table-info">
+                    <th scope="col" class="bio">
+                        一枝草，一點露 &nbsp;
+                    </th>
+                    <div>
+                        <th scope="col">
+                            <!-- <button type="button" class="btn btn-primary btn-lg" id="btn1">聲音</button> -->
+                            <audio id="sound1" src="/audio/test.mp3" preload="auto"></audio>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" onclick="document.getElementById('sound1').play();">
+                            聲音
+                        </button>
+                            <!-- <audio controls="controls">
+                            <source src="test.mp3">
+                          您的瀏覽器不支援此音樂播放模式!
+                        </audio> -->
+                        </th>
+                    </div>
+                    <th scope="col">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+                        解釋
+                    </button>
+                        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="exampleModalCenterTitle">解釋</h2>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        天無絕人之路
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <!-- /////////////////////////////////////////// -->
+                <tr class="table-primary">
+                    <th scope="col" class="bio">
+                        人在做，天在看 &nbsp;
+                    </th>
+                    <th scope="col">
+                        <audio id="sound2" src="audio/test2.mp3" preload="auto"></audio>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" onclick="document.getElementById('sound2').play();">
+                        聲音
+                    </button>
+                    </th>
+                    <th scope="col">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter2">
+                        解釋
+                    </button>
+                        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="exampleModalCenterTitle">解釋</h2>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        老天有眼
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <!-- /////////////////////////////////////////// -->
+                <tr class="table-success">
+                    <th scope="col" class="bio">
+                        心歹無人知，嘴歹尚利害 &nbsp;
+                    </th>
+                    <th scope="col">
+                        <button type="button" class="btn btn-primary" data-toggle="modal">
+                        聲音
+                    </button>
+                    </th>
+                    <th scope="col">
+                        <!-- <button type="button" class="btn btn-primary btn-lg">解釋</button> -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter3">
+                        解釋
+                    </button>
+                        <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="exampleModalCenterTitle">解釋</h2>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        心地不善別人看不出來，但口出惡言，則令人厭惡
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <!-- /////////////////////////////////////////// -->
+                <tr class="table-info">
+                    <th scope="col" class="bio">
+                        聽某嘴，大富貴 &nbsp;
+                    </th>
+                    <th scope="col">
+                        <button type="button" class="btn btn-primary" data-toggle="modal">
+                        聲音
+                    </button>
+                    </th>
+                    <th scope="col">
+                        <!-- <button type="button" class="btn btn-primary btn-lg">解釋</button> -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter4">
+                        解釋
+                    </button>
+                        <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="exampleModalCenterTitle">解釋</h2>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        聽太太的話，可以大富大貴
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <!-- /////////////////////////////////////////// -->
+                <tr class="table-danger">
+                    <th scope="col" class="bio">
+                        一兼二顧，摸蜊仔兼洗褲 &nbsp;
+                    </th>
+                    <th scope="col">
+                        <audio id="sound5" src="/audio/test2.mp3" preload="auto"></audio>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" onclick="document.getElementById('sound5').play();">
+                        聲音
+                    </button>
+                    </th>
+                    <th scope="col">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter5">
+                        解釋
+                    </button>
+                        <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="exampleModalCenterTitle">解釋</h2>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        一舉二得之意
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+
+            </thead>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
