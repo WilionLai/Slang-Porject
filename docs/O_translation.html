@@ -22,9 +22,7 @@
         }
         
         .btn {
-            font-size: 40px;
-            text-align: center;
-            border-radius: 50px;
+            font-size: 30px;
         }
         
         .modal-body {
@@ -46,9 +44,8 @@
             font-family: DFKai-sb;
         }
         
-        .simg {
-            height: 70px;
-            width: 70px;
+        .modal-body {
+            font-size: 50px;
         }
     </style>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -79,7 +76,7 @@
     <!-- <div class="tit">HIHI</div> -->
     <br>
     <div class="container">
-        <p class="p1" style="font-weight: bold;">俚語寶典</p>
+        <p class="p1">俚語寶典</p>
         <table class="table table-hover">
             <thead>
                 <tr class="table-success">
@@ -92,8 +89,7 @@
                             <audio id="sound1" src="../audio/S01.mp3" preload="auto"></audio>
                             <button type="button" class="btn btn-info" data-toggle="modal" onclick="document.getElementById('sound1').play();">
                                 <!-- 聲音 -->
-                                <img src="../img/trumpet.png" class="simg" alt="">
-                                <!-- <a class="soundbtn">聲音</a> -->
+                                <img src="/img/trumpet.png" style="height: 50px; width: 50px;" alt="">
                                 聲音
                             </button>
                             <!-- <audio controls="controls">
@@ -103,8 +99,7 @@
                         </th>
                     </div>
                     <th scope="col">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter1">
-                            <img src="../img/notebook.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
                             解釋
                         </button>
                         <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -131,14 +126,12 @@
                     </th>
                     <th scope="col">
                         <audio id="sound2" src="../audio/S02.mp3" preload="auto"></audio>
-                        <button type="button" class="btn btn-info" data-toggle="modal" onclick="document.getElementById('sound2').play();">
-                            <img src="../img/trumpet.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" onclick="document.getElementById('sound2').play();">
                             聲音
                         </button>
                     </th>
                     <th scope="col">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter2">
-                            <img src="../img/notebook.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter2">
                             解釋
                         </button>
                         <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -165,15 +158,13 @@
                     </th>
                     <th scope="col">
                         <audio id="sound3" src="../audio/S03.mp3" preload="auto"></audio>
-                        <button type="button" class="btn btn-info" data-toggle="modal" onclick="document.getElementById('sound3').play();">
-                            <img src="../img/trumpet.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" onclick="document.getElementById('sound3').play();">
                             聲音
                         </button>
                     </th>
                     <th scope="col">
                         <!-- <button type="button" class="btn btn-primary btn-lg">解釋</button> -->
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter3">
-                            <img src="../img/notebook.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter3">
                             解釋
                         </button>
                         <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -200,15 +191,13 @@
                     </th>
                     <th scope="col">
                         <audio id="sound4" src="../audio/S04.mp3" preload="auto"></audio>
-                        <button type="button" class="btn btn-info" data-toggle="modal" onclick="document.getElementById('sound4').play();">
-                            <img src="../img/trumpet.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" onclick="document.getElementById('sound4').play();">
                             聲音
                         </button>
                     </th>
                     <th scope="col">
                         <!-- <button type="button" class="btn btn-primary btn-lg">解釋</button> -->
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter4">
-                            <img src="../img/notebook.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter4">
                             解釋
                         </button>
                         <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -235,14 +224,12 @@
                     </th>
                     <th scope="col">
                         <audio id="sound5" src="../audio/S05.mp3" preload="auto"></audio>
-                        <button type="button" class="btn btn-info" data-toggle="modal" onclick="document.getElementById('sound5').play();">
-                            <img src="../img/trumpet.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" onclick="document.getElementById('sound5').play();">
                             聲音
                         </button>
                     </th>
                     <th scope="col">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter5">
-                            <img src="../img/notebook.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter5">
                             解釋
                         </button>
                         <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -269,14 +256,12 @@
                     </th>
                     <th scope="col">
                         <audio id="sound6" src="../audio/S06.mp3" preload="auto"></audio>
-                        <button type="button" class="btn btn-info" data-toggle="modal" onclick="document.getElementById('sound6').play();">
-                            <img src="../img/trumpet.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" onclick="document.getElementById('sound6').play();">
                             聲音
                         </button>
                     </th>
                     <th scope="col">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter6">
-                            <img src="../img/notebook.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter6">
                             解釋
                         </button>
                         <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -303,14 +288,12 @@
                     </th>
                     <th scope="col">
                         <audio id="sound7" src="../audio/S07.mp3" preload="auto"></audio>
-                        <button type="button" class="btn btn-info" data-toggle="modal" onclick="document.getElementById('sound7').play();">
-                            <img src="../img/trumpet.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" onclick="document.getElementById('sound7').play();">
                             聲音
                         </button>
                     </th>
                     <th scope="col">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter7">
-                            <img src="../img/notebook.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter7">
                             解釋
                         </button>
                         <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -337,15 +320,13 @@
                     </th>
                     <th scope="col">
                         <audio id="sound8" src="../audio/S08.mp3" preload="auto"></audio>
-                        <button type="button" class="btn btn-info" data-toggle="modal" onclick="document.getElementById('sound8').play();">
-                            <img src="../img/trumpet.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" onclick="document.getElementById('sound8').play();">
                             聲音
                         </button>
                     </th>
                     <th scope="col">
                         <!-- <button type="button" class="btn btn-primary btn-lg">解釋</button> -->
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter8">
-                            <img src="../img/notebook.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter8">
                             解釋
                         </button>
                         <div class="modal fade" id="exampleModalCenter8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -372,15 +353,13 @@
                     </th>
                     <th scope="col">
                         <audio id="sound9" src="../audio/S09.mp3" preload="auto"></audio>
-                        <button type="button" class="btn btn-info" data-toggle="modal" onclick="document.getElementById('sound9').play();">
-                            <img src="../img/trumpet.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" onclick="document.getElementById('sound9').play();">
                             聲音
                         </button>
                     </th>
                     <th scope="col">
                         <!-- <button type="button" class="btn btn-primary btn-lg">解釋</button> -->
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter9">
-                            <img src="../img/notebook.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter9">
                             解釋
                         </button>
                         <div class="modal fade" id="exampleModalCenter9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -402,19 +381,18 @@
                 </tr>
                 <!-- /////////////////////////////////////////// -->
                 <tr class="table-primary">
-                    <th scope="col" class="bio">
+                    <th scope="col" class="bio" id="aa">
+                        <div id="66"></div>
                         無魚，蝦嘛好 &nbsp;
                     </th>
                     <th scope="col">
                         <audio id="sound10" src="../audio/S10.mp3" preload="auto"></audio>
-                        <button type="button" class="btn btn-info" data-toggle="modal" onclick="document.getElementById('sound10').play();">
-                            <img src="../img/trumpet.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" onclick="document.getElementById('sound10').play();">
                             聲音
                         </button>
                     </th>
                     <th scope="col">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter10">
-                            <img src="../img/notebook.png" class="simg" alt="">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter10">
                             解釋
                         </button>
                         <div class="modal fade" id="exampleModalCenter10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -428,176 +406,6 @@
                                     </div>
                                     <div class="modal-body">
                                         聊勝於無
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </th>
-                </tr>
-                <!-- /////////////////////////////////////////// -->
-                <tr class="table-success">
-                    <th scope="col" class="bio">
-                        一分錢，一點血 &nbsp;
-                    </th>
-                    <th scope="col">
-                        <audio id="sound11" src="../audio/S11.mp3" preload="auto"></audio>
-                        <button type="button" class="btn btn-info" data-toggle="modal" onclick="document.getElementById('sound11').play();">
-                            <img src="../img/trumpet.png" class="simg" alt="">
-                            聲音
-                        </button>
-                    </th>
-                    <th scope="col">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter11">
-                            <img src="../img/notebook.png" class="simg" alt="">
-                            解釋
-                        </button>
-                        <div class="modal fade" id="exampleModalCenter11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title" id="exampleModalCenterTitle">解釋</h2>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        賺錢不易，勤儉持家
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </th>
-                </tr>
-                <!-- /////////////////////////////////////////// -->
-                <tr class="table-danger">
-                    <th scope="col" class="bio">
-                        一樣生，百樣死 &nbsp;
-                    </th>
-                    <th scope="col">
-                        <audio id="sound12" src="../audio/S12.mp3" preload="auto"></audio>
-                        <button type="button" class="btn btn-info" data-toggle="modal" onclick="document.getElementById('sound12').play();">
-                            <img src="../img/trumpet.png" class="simg" alt="">
-                            聲音
-                        </button>
-                    </th>
-                    <th scope="col">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter12">
-                            <img src="../img/notebook.png" class="simg" alt="">
-                            解釋
-                        </button>
-                        <div class="modal fade" id="exampleModalCenter12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title" id="exampleModalCenterTitle">解釋</h2>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        喻人生要有價值
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </th>
-                </tr>
-                <!-- /////////////////////////////////////////// -->
-                <tr class="table-warning">
-                    <th scope="col" class="bio">
-                        少年昧曉想，食老不知樣 &nbsp;
-                    </th>
-                    <th scope="col">
-                        <audio id="sound13" src="../audio/S13.mp3" preload="auto"></audio>
-                        <button type="button" class="btn btn-info" data-toggle="modal" onclick="document.getElementById('sound13').play();">
-                            <img src="../img/trumpet.png" class="simg" alt="">
-                            聲音
-                        </button>
-                    </th>
-                    <th scope="col">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter13">
-                            <img src="../img/notebook.png" class="simg" alt="">
-                            解釋
-                        </button>
-                        <div class="modal fade" id="exampleModalCenter13" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title" id="exampleModalCenterTitle">解釋</h2>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        少壯不努力，老大徒傷悲
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </th>
-                </tr>
-                <!-- /////////////////////////////////////////// -->
-                <tr class="table-info">
-                    <th scope="col" class="bio">
-                        人衰，種瓠仔生菜瓜 &nbsp;
-                    </th>
-                    <th scope="col">
-                        <audio id="sound14" src="../audio/S14.mp3" preload="auto"></audio>
-                        <button type="button" class="btn btn-info" data-toggle="modal" onclick="document.getElementById('sound14').play();">
-                            <img src="../img/trumpet.png" class="simg" alt="">
-                            聲音
-                        </button>
-                    </th>
-                    <th scope="col">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter14">
-                            <img src="../img/notebook.png" class="simg" alt="">
-                            解釋
-                        </button>
-                        <div class="modal fade" id="exampleModalCenter14" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title" id="exampleModalCenterTitle">解釋</h2>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        倒楣
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </th>
-                </tr>
-                <!-- /////////////////////////////////////////// -->
-                <tr class="table-primary">
-                    <th scope="col" class="bio">
-                        三年一閏，好壞照輪 &nbsp;
-                    </th>
-                    <th scope="col">
-                        <audio id="sound15" src="../audio/S15.mp3" preload="auto"></audio>
-                        <button type="button" class="btn btn-info" data-toggle="modal" onclick="document.getElementById('sound15').play();">
-                            <img src="../img/trumpet.png" class="simg" alt="">
-                            聲音
-                        </button>
-                    </th>
-                    <th scope="col">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter15">
-                            <img src="../img/notebook.png" class="simg" alt="">
-                            解釋
-                        </button>
-                        <div class="modal fade" id="exampleModalCenter15" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title" id="exampleModalCenterTitle">解釋</h2>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        風水輪流轉
                                     </div>
                                 </div>
                             </div>
