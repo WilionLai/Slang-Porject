@@ -8,7 +8,8 @@
     <title>俚語桌遊</title>
     <link rel="icon" href="../img/tit.ico">
     <!-- <link rel="stylesheet" href="./docs/css/darkly_bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="https://bootswatch.com/5/morph/bootstrap.min.css"> -->
     <style>
@@ -19,14 +20,14 @@
             background-size: 100% 100%;
             font-family: DFKai-sb;
         }
-        
+
         .p1 {
             color: black;
             font-size: 50px;
             text-align: center;
             font-family: DFKai-sb;
         }
-        
+
         .rule {
             font-size: 40px;
             /* text-align: center; */
@@ -35,7 +36,7 @@
             padding-left: 50px;
             padding-right: 50px;
         }
-        
+
         .back {
             opacity: 0.5;
             transition: 0.3s;
@@ -43,18 +44,18 @@
             top: 5%;
             left: 3%;
         }
-        
+
         .back:hover {
             opacity: 1;
         }
-        
+
         .foot {
             position: fixed;
             left: 0%;
             right: 0%;
             bottom: 0%;
         }
-        
+
         .center {
             display: block;
             margin-left: auto;
@@ -62,9 +63,15 @@
             width: 80%;
         }
     </style>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
     </script>
@@ -76,27 +83,36 @@
     <div class="container">
         <p class="p1">規則說明</p>
         <div class="rule">
+            <p>卡牌說明–</p>
+                <img src="../img/rule/1.png" alt="" class="center">
+ 
+                <img src="../img/rule/2.png" alt="" class="center">
+       
+                <img src="../img/rule/3.png" alt="" class="center">
+        </div>
+        <hr style="border: 1px solid red;">
+        <div class="rule">
             <p>規則#1</p>
             <p>
                 1.將所有俚語牌攤放在桌上。<br> 2.翻開解釋牌。 <br> 3.當解釋牌翻開後，請玩家快速找出相對應的俚語牌。 <br>
             </p>
-            <a href="../img/rule01.png" target="_blank">
-                <img src="../img/rule01s.png" alt="" class="center">
+            <a href="../img/rule/rule1.png" target="_blank">
+                <img src="../img/rule/rule1.png" alt="" class="center">
             </a>
         </div>
         <hr style="border: 1px solid red;">
         <div class="rule">
             <p>規則#2</p>
             <p>
-                 1.將俚語牌全部發給玩家。
+                1.將俚語牌全部發給玩家。
                 <br> 2.翻開解釋牌。
                 <br> 3.玩家從手裡丟出對應解釋的手中俚語牌。
                 <br> 4.錯誤者要將桌上已出的牌收回手中。
                 <br> 5.最先出完者勝利。
                 <br>
             </p>
-            <a href="../img/rule02.png" target="_blank">
-                <img src="../img/rule02s.png" alt="" class="center">
+            <a href="../img/rule/rule2.png" target="_blank">
+                <img src="../img/rule/rule2.png" alt="" class="center">
             </a>
         </div>
         <hr style="border: 1px solid red;">
@@ -106,8 +122,8 @@
                 1.將俚語卡全部蓋在桌面上。<br> 2.翻開兩張對應俚語句。
                 <br> 3.數量多者勝利。 <br>
             </p>
-            <a href="../img/rule03.png" target="_blank">
-                <img src="../img/rule03s.png" alt="" class="center">
+            <a href="../img/rule/rule31.png" target="_blank">
+                <img src="../img/rule/rule31.png" alt="" class="center">
             </a>
         </div>
     </div>
